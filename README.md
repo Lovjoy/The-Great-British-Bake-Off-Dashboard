@@ -113,14 +113,14 @@ Key preparation steps included:
 
 ## Key Findings
 
-* Highest-rated season: Season 5 with average rating of 8.10
-* Season or episode with highest sample viewership: Season 7 finale with 57.47K total views
-* Baker with the most handshakes: DanBH and Rahul in season 9 both recieved 3 handshakes each
-* Strongest-performing non-winner: Jurgen in season 12 with 3 Star bakers, 3 did wells, never at risk but didn't make it to the final
-* Winner with the weakest performance metrics: Jon in season 3 with 1 Star baker, 1 did well, and 3 times at risk
-* Gender or age group patterns in handshake distribution: There were roughly the same number of females and males, with slightly more females in the show. However, there were 29 males that recieved a handshake and only 22 females. The distrubution of the ages was highest in the 30 age bin, but handshakes where highest in the 25 age bin. Of this younger age bin 25, females 11 recived handshakes where males only recived 5. Most females with handshakes are age bins 25-30 13/17 female handshakes. 
-* Themes most associated with handshakes: Biscuits had 7 handshakes, all on episode two of their season, all did not win and one was a runnerup. 
-* Most common theme groups: Bread, Cake, Biscuits, and the Final appear in every season. 
+* **Highest-rated season:** Season 5 had the highest average MyRating, with an average score of **8.10**.
+* **Most-viewed episode in the sample:** The **Season 7 finale** had the highest sample MyViewership, with **57.47K total views**.
+* **Bakers with the most handshakes:** **DanBH** and **Rahul** from Season 9 received the most handshakes, with **3 handshakes each**.
+* **Strongest-performing non-winner:** **Jürgen** from Season 12 stood out as the strongest-performing non-winner. He earned **3 Star Baker awards**, received **3 Did Well placements**, was **never marked At Risk**, but did not make it to the final.
+* **Winner with the weakest performance metrics:** **Jon** from Season 3 had the weakest winner performance based on the selected metrics, with **1 Star Baker award**, **1 Did Well placement**, and **3 At Risk placements**.
+* **Handshake distribution by gender and age:** The show had a fairly balanced gender distribution, with slightly more female bakers overall. However, **29 handshakes** received by **male bakes** compared with **22 handshakes** for female bakers. Age distribution was highest in the **30 age bin**, while handshakes peaked in the **25 age bin**. Within the 25 age bin, **11 female handshakes** compared with **5 male handshakes**. Most female handshake recipients were concentrated in the **25 to 30 age bins**, accounting for **13 of 17 female handshakes**.
+* **Themes most associated with handshakes:** **Biscuits** had the most handshakes, with **7 total**. All biscuit handshakes occurred in Episode 2 of their respective seasons. None of the bakers who received a biscuit handshake went on to win, though one became a runner-up.
+* **Most common theme groups:** **Bread, Cake, Biscuits, and the Final** appeared in every season.
 
 ## Known Limitations
 
