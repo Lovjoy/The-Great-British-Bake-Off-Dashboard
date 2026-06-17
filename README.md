@@ -9,8 +9,8 @@ The goal of this project was to build a polished first dashboard that demonstrat
 ## Live Dashboard and Links
 
 * Interactive Power BI dashboard:
-* Blog post:
-* GitHub repository:
+* Blog post: 
+* GitHub repository: https://github.com/Lovjoy/The-Great-British-Bake-Off-Dashboard
 
 ## Dashboard Preview
 
@@ -31,7 +31,11 @@ The dashboard is organized into guided pages that move from high-level explorati
 
 ![Home Page](screenshots/home.png)
 
+![Viewership & Rating](screenshots/viewership_ratings.png)
+
 ![Baker Directory](screenshots/baker_directory.png)
+
+![Handshake Demographics](screenshots/handshake_demographics.png)
 
 ![Baker Outcomes](screenshots/baker_outcomes.png)
 
