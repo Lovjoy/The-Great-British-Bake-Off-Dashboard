@@ -81,7 +81,7 @@ The dataset includes five related CSV files:
 | `Outcomes`       | Baker outcome records by episode, including Star Baker, eliminated, did well, safe, at risk, absent, and handshake fields.   |
 | `Seasons`        | Season metadata, including hosts, judges, location, network, winner, year, and streaming labels.                             |
 
-Note: `MyRating` and `MyViewership` are artificial sample-data fields, so related insights should be interpreted as dashboard-practice trends rather than real-world audience metrics.
+Note: `MyRating` and `MyViewership` are **artificial sample-data fields**, so related insights should be interpreted as dashboard-practice trends rather than real-world audience metrics.
 
 ## Data Preparation
 
@@ -89,13 +89,14 @@ The project began by loading all five CSV files into Power BI and recreating the
 
 Key preparation steps included:
 
-* Created custom keys such as `BakerSeasonKey` and `SeasonEpisode` to support filtering across tables.
+* Created custom keys such as `BakerSeasonKey`, `BakerSeasonEpisode` and `SeasonEpisodePad` to support filtering across tables.
 * Created a cleaned distinct season table by removing host and judge columns from `Seasons`, then removing duplicate season rows.
 * Set baker image links to the **Image URL** data category.
 * Manually grouped detailed episode themes into broader `ThemeGroup` categories.
 * Created a theme-group median time table to support missing challenge-time fills.
+* Added flag columns for the Times to indicate which had missings values. 
 * Filled missing Signature, Technical, and Showstopper challenge times using the median time for the matching theme group and challenge type.
-* Added one minute to filled time values to mark them as imputed, since original challenge times generally ended in `0` or `5`.
+
 * Created calculated fields for placement, last episode reached, total handshakes, Star Baker counts, “did well” counts, and “at risk” counts.
 
 ## Key Features
@@ -112,18 +113,14 @@ Key preparation steps included:
 
 ## Key Findings
 
-To be completed after final dashboard validation.
-
-Suggested findings to include:
-
-* Highest-rated season
-* Season or episode with highest sample viewership
-* Baker with the most handshakes
-* Strongest-performing non-winner
-* Winner with the weakest performance metrics
-* Gender or age group patterns in handshake distribution
-* Themes most associated with handshakes
-* Most common theme groups
+* Highest-rated season: Season 5 with average rating of 8.10
+* Season or episode with highest sample viewership: Season 7 finale with 57.47K total views
+* Baker with the most handshakes: DanBH and Rahul in season 9 both recieved 3 handshakes each
+* Strongest-performing non-winner: Jurgen in season 12 with 3 Star bakers, 3 did wells, never at risk but didn't make it to the final
+* Winner with the weakest performance metrics: Jon in season 3 with 1 Star baker, 1 did well, and 3 times at risk
+* Gender or age group patterns in handshake distribution: There were roughly the same number of females and males, with slightly more females in the show. However, there were 29 males that recieved a handshake and only 22 females. The distrubution of the ages was highest in the 30 age bin, but handshakes where highest in the 25 age bin. Of this younger age bin 25, females 11 recived handshakes where males only recived 5. Most females with handshakes are age bins 25-30 13/17 female handshakes. 
+* Themes most associated with handshakes: Biscuits had 7 handshakes, all on episode two of their season, all did not win and one was a runnerup. 
+* Most common theme groups: Bread, Cake, Biscuits, and the Final appear in every season. 
 
 ## Known Limitations
 
@@ -142,6 +139,7 @@ gbbo-powerbi-dashboard/
 │   └── gbbo_dashboard.pbix
 │
 ├── screenshots/
+│   ├── model.png
 │   ├── home.png
 │   ├── baker_directory.png
 │   ├── baker_profile.png
@@ -150,15 +148,15 @@ gbbo-powerbi-dashboard/
 │   ├── baker_outcomes.png
 │   ├── theme_explorer.png
 │   ├── handshake_deep_dive.png
-|   ├── The_Great_British_Bake_Off_title.jpg
-|   └── handshake.webp
+│   ├── The_Great_British_Bake_Off_title.jpg
+│   └── handshake.webp
 │
 ├── docs/
 │   ├── dax_measures.md
 │   ├── power_query_notes.md
 │   └── dashboard_pages.md
 │
-└── data/
+├── data/
 │   ├── GBBO Data Set - GBBO_Data_Disctinary.pdf
 │   ├── Bakers.csv
 │   ├── ChallegeBakers.csv
@@ -177,10 +175,7 @@ Additional technical documentation is available in the `docs/` folder:
 
 ## Future Improvements
 
-* Finalize and document the corrected data model.
 * Add a short video walkthrough of dashboard navigation.
-* Add more detailed validation checks for major metrics.
-* Improve visual consistency across all pages.
 * Expand the blog post with findings, design decisions, and lessons learned.
 
 ## Credits and Data Sources
