@@ -10,7 +10,7 @@ The goal of this project was to build a polished first dashboard that demonstrat
 
 * Interactive Power BI dashboard:
 * Blog post: 
-* GitHub repository: https://github.com/Lovjoy/The-Great-British-Bake-Off-Dashboard
+* GitHub repository: https://github.com/Lovjoy/The-Great-British-Bake-Off-Dashboard/tree/main/dasboard
 
 ## Dashboard Preview
 
@@ -168,6 +168,7 @@ gbbo-powerbi-dashboard/
 ## Documentation
 
 Additional technical documentation is available in the `docs/` folder:
+https://github.com/Lovjoy/The-Great-British-Bake-Off-Dashboard/tree/main/docs
 
 * `dax_measures.md`: Key measures and calculated columns
 * `power_query_notes.md`: Data cleaning and transformation steps
