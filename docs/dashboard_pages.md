@@ -97,13 +97,13 @@ The `Baker Directory` page combines baker lookup and outcome analysis. It lets u
 ### Key Visuals
 
 * Baker outcome table
-* Season selector
+* Season selector and Baker input slicer
 * Placement, gender, and age filters
 * Rating and viewership cards for selected seasons
 
 ### Interactions
 
-* Users can filter bakers by season, placement, gender, and age bin.
+* Users can filter bakers by name, season, placement, gender, and age bin.
 * Table selections cross-filter visible baker records.
 * Users can drill through from a baker to the `Baker Profile` page.
 
