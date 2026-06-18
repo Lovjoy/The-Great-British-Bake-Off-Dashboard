@@ -6,11 +6,11 @@ This Power BI dashboard explores *The Great British Bake Off* Seasons 1–14 thr
 
 The goal of this project was to build a polished first Power BI dashboard that demonstrates data cleaning, relationship modeling, calculated measures, interactive report design, drillthrough navigation, bookmarks, and insight-focused storytelling.
 
-## Live Dashboard and Links
+## Links
 
-* Interactive Power BI dashboard:
-* Reflection blog post:
+* Reflection blog post: https://arayofdata.blogspot.com/2026/06/star-bakers-handshakes-and-dashboards.html
 * GitHub repository: https://github.com/Lovjoy/The-Great-British-Bake-Off-Dashboard/tree/main/dashboard
+* Youtube demo: Coming Soon
 
 ## Dashboard Preview
 
