@@ -1,58 +1,75 @@
 # Dashboard Pages
 
-This document summarizes the report pages and main interactions used in the Great British Bake Off Power BI dashboard. The report uses slicers, cross-filtering, drill-through pages, reset buttons, navigation buttons, and bookmarked insight views.
+This document summarizes the report pages and main interactions used in the Great British Bake Off Power BI dashboard. The report uses slicers, cross-filtering, drillthrough pages, reset buttons, navigation buttons, and bookmarked insight views.
 
 ## Report Navigation Summary
 
-| Page                   | Purpose                                                  | Main Interaction                                           |
-| ---------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| Home                   | Navigate the report and access saved views               | Use buttons for page navigation, resets, and insights      |
-| Viewership & Ratings   | Explore rating and viewership trends                     | Drill down by air date, year, and season                   |
-| Baker Directory        | Browse bakers by season                                  | Select a baker and drill through to Baker Profile          |
-| Baker Profile          | Review detailed baker-level stats                        | View one baker’s performance, episodes, ratings, and views |
-| Handshake Demographics | Analyze handshakes by gender, age, season, and placement | Use slicers and visual selections to cross-filter patterns |
-| Baker Outcomes         | Compare baker performance outcomes                       | Filter baker stats and drill through to Baker Profile      |
-| Theme Explorer         | Explore episode themes and theme groups                  | Filter by season, episode, theme, and theme group          |
-| Handshake Deep Dive    | Review detailed handshake records                        | Filter individual handshake records and outcome totals     |
+| Page                     | Purpose                                             | Main Interaction                                                             |
+| ------------------------ | --------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Home**                 | Navigate the report and access guided insight views | Use buttons for page navigation, resets, and bookmarked insights             |
+| **Viewership & Ratings** | Explore sample rating and sample viewership trends  | Drill down by air date, year, and season                                     |
+| **Baker Directory**      | Browse bakers and compare outcome metrics           | Filter by season, placement, gender, and age; drill through to Baker Profile |
+| **Baker Profile**        | Review detailed baker-level stats                   | View one baker’s bakes, outcomes, ratings, and viewership                    |
+| **Demographics**         | Analyze baker demographics and handshake patterns   | Use slicers and visual selections to cross-filter demographic patterns       |
+| **Theme Explorer**       | Explore episode themes and theme groups             | Filter by season, episode, theme, and theme group                            |
+| **Handshake Deep Dive**  | Review detailed handshake records and totals        | Filter handshake records by baker, theme, placement, age, gender, and season |
 
 ## Home
 
 ### Purpose
 
-The `Home` page is the main navigation hub. It provides page descriptions, quick navigation, reset controls, and bookmarked insight views.
+The `Home` page is the main navigation hub. It provides page descriptions, report navigation, reset controls, and bookmarked insight views.
 
 ### Key Visuals
 
-* Page description cards
+* Page descriptions
 * Navigation buttons
 * Reset buttons
-* Insight buttons
+* Bookmark-driven insight buttons
 
 ### Interactions
 
 * Navigation buttons move users between report pages.
-* Reset buttons return pages to their default state.
+* Reset buttons return pages to their default states.
 * Insight buttons apply bookmarked views for guided exploration.
 
 ### Metrics Shown
 
-* None. This page is used for navigation.
+* None. This page is used for navigation and guided report access.
 
-### Drill-through / Bookmarks
+### Drillthrough / Bookmarks
 
 * Uses bookmarks for reset states and insight views.
-* Does not use drill-through.
+* Does not use drillthrough.
+
+### Bookmarked Insight Views
+
+Examples of guided bookmark views include:
+
+* Highest Rated Episode
+* Most Viewed Episode
+* Weakest Winner
+* Best Non-Winner
+* Winner Age & Gender
+* Most Handshakes
+* Top Handshake Theme
+* Most Common Theme Groups
+* Oldest Bakers
+* Female Handshake Ages
+* Age 25-30 Demographics
+* Age 25-29 Handshakes
+
 
 ## Viewership & Ratings
 
 ### Purpose
 
-The `Viewership & Ratings` page shows how episode ratings and viewership changed across seasons and air dates.
+The `Viewership & Ratings` page shows how sample episode ratings and sample viewership changed across seasons and air dates.
 
 ### Key Visuals
 
-* Viewership trend by air date and season
-* Rating trend by air date and season
+* Sample viewership trend by air date and season
+* Sample rating trend by air date and season
 * Summary cards for selected time periods
 
 ### Interactions
@@ -63,83 +80,103 @@ The `Viewership & Ratings` page shows how episode ratings and viewership changed
 
 ### Metrics Shown
 
-* Average rating for selected episodes
-* Total viewership for selected episodes
+* Average sample rating for selected episodes
+* Total sample viewership for selected episodes
 
-### Drill-through / Bookmarks
+### Drillthrough / Bookmarks
 
 * Uses visual drill-down.
-* Does not use drill-through to another page.
+* Does not use drillthrough to another page.
 
 ## Baker Directory
 
 ### Purpose
 
-The `Baker Directory` page lets users browse bakers by season and open detailed baker profiles.
+The `Baker Directory` page combines baker lookup and outcome analysis. It lets users browse bakers by season, placement, age, gender, handshakes, and key performance metrics.
 
 ### Key Visuals
 
-* Baker list or table
-* Season filter
-* Baker summary fields
+* Baker outcome table
+* Season selector
+* Placement, gender, and age filters
 * Rating and viewership cards for selected seasons
 
 ### Interactions
 
-* Users can filter bakers by season.
-* Selecting a baker cross-filters related visuals.
-* Users can drill through to the `Baker Profile` page.
+* Users can filter bakers by season, placement, gender, and age bin.
+* Table selections cross-filter visible baker records.
+* Users can drill through from a baker to the `Baker Profile` page.
 
 ### Metrics Shown
 
-* Average rating for selected seasons
-* Total viewership for selected seasons
-* Baker identifying information
+* Last episode reached
+* Placement
+* Age and gender
+* Total handshakes
+* Star Baker count
+* Did Well count
+* At Risk count
+* Average sample rating for selected seasons
+* Total sample viewership for selected seasons
 
-### Drill-through / Bookmarks
+### Drillthrough / Bookmarks
 
-* Right-click a baker and select the Baker Profile drill-through option.
+* Right-click a baker and select the `Baker Profile` drillthrough option.
 
 ## Baker Profile
 
 ### Purpose
 
-The `Baker Profile` page provides a detailed view of one baker’s season performance and episode history.
+The `Baker Profile` page provides a detailed view of one baker’s season performance, episode history, bakes, and outcomes.
 
 ### Key Visuals
 
 * Baker information summary
-* Outcome stats
-* Episode-level bake and status table
+* Baker image
+* Outcome summary cards
+* Episode-level Signature and Shostopper bake table
+* Episode-level Technical bake and outcomes table
 * Season winner reference
 * Episode rating and viewership cards
 
 ### Interactions
 
-* The page is filtered by the selected baker from drill-through.
+* The page is filtered by the selected baker from drillthrough.
 * Tables and cards update to show that baker’s season record.
+* Users can return to the previous page after reviewing the profile.
 
 ### Metrics Shown
 
 * Season, gender, and age
-* Handshakes, Star Baker, Did Well, At Risk, and Absent counts
-* Episode theme, bake details, challenge time, and episode status
+* Handshakes
+* Star Baker count
+* Did Well count
+* At Risk count
+* Absent count
+* Episode theme
+* Signature and Showstopper bakes
+* Technical rank
+* Challenge time
+* Episode status
 * Winner for the baker’s season
-* Average rating and total viewership for episodes the baker appeared in
+* Average sample rating for episodes the baker appeared in
+* Total sample viewership for episodes the baker appeared in
 
-### Drill-through / Bookmarks
+### Drillthrough / Bookmarks
 
-* Serves as a drill-through destination from baker-focused pages.
-* Users can return to the previous page after reviewing the profile.
+* Serves as a drillthrough destination from baker-focused pages.
+* Uses a back button to return to the previous page.
 
-## Handshake Demographics
+## Demographics
 
 ### Purpose
 
-The `Handshake Demographics` page explores how Paul Hollywood handshakes are distributed by gender, age, season, and placement.
+The `Demographics` page analyzes bakers by age, gender, placement, and handshake-related demographic patterns.
 
 ### Key Visuals
 
+* Baker totals by gender
+* Baker totals by age bin
 * Handshake totals by gender
 * Handshake patterns by age bin
 * Handshake patterns by season
@@ -147,105 +184,86 @@ The `Handshake Demographics` page explores how Paul Hollywood handshakes are dis
 
 ### Interactions
 
-* Slicers filter by placement and other demographic fields.
-* Selecting gender, age bin, or season cross-filters related visuals.
+* Slicer filter by placement.
+* Selecting gender, age bin, season, or placement cross-filters related visuals.
 * Cross-filtering helps compare overall baker demographics with handshake patterns.
 
 ### Metrics Shown
 
-* Average age for the selected group
-* Total handshakes by selected gender, age bin, season, and/or placement
+* Average age for selected bakers
+* Total handshakes by cross-filters or slicer
 * Handshake distribution across demographic groups
 
-### Drill-through / Bookmarks
+### Drillthrough / Bookmarks
 
-* Users can drill through from gender, age bin, or season to the `Handshake Deep Dive` page.
-
-## Baker Outcomes
-
-### Purpose
-
-The `Baker Outcomes` page compares baker performance outcomes across demographic groups, seasons, and placements.
-
-### Key Visuals
-
-* Baker outcome table
-* Gender, age bin, season, and placement slicers
-* Baker performance fields
-
-### Interactions
-
-* Slicers filter the baker outcome table.
-* Table selections cross-filter visible records.
-* Users can drill through from a baker to the `Baker Profile` page.
-
-### Metrics Shown
-
-* Handshakes received
-* Star Baker count
-* Did Well count
-* At Risk count
-* Placement and demographic fields
-
-### Drill-through / Bookmarks
-
-* Right-click a baker and select the Baker Profile drill-through option.
+* Users can drill through from selected gender or age bin views to the `Handshake Deep Dive` page.
+* Reset buttons return the page to its default state.
 
 ## Theme Explorer
 
 ### Purpose
 
-The `Theme Explorer` page shows how episode themes and broader theme groups appear across the show.
+The `Theme Explorer` page shows how episode themes and broader theme groups appear across the show. It also supports analysis of where themes appear in the season and how challenge times vary by theme group.
 
 ### Key Visuals
 
-* Season slicer
-* Episode slicer
+* Season selector
+* Episode selector
 * Theme group treemap
-* Theme-level filtering visuals
+* Theme and theme group tables
+* Median challenge-time tool-tip
 
 ### Interactions
 
-* Users can filter by season, episode, theme, or theme group.
-* Selecting a theme group cross-filters related visuals.
+* Users can filter by season or episode.
+* Selecting a theme group or theme cross-filters related visuals.
+* Season and episode selectors narrow the theme analysis to specific parts of the show.
 
 ### Metrics Shown
 
 * Number of episodes by theme group
 * Theme and theme group distribution across selected seasons or episodes
+* Signature, Technical, and Showstopper median challenge times
 
-### Drill-through / Bookmarks
+### Drillthrough / Bookmarks
 
+* Users can drill through from selected Theme Group to the `Handshake Deep Dive` page.
 * Uses slicers and cross-filtering.
-* Does not use drill-through as a main interaction.
 
 ## Handshake Deep Dive
 
 ### Purpose
 
-The `Handshake Deep Dive` page provides a detailed record-level view of individual handshakes and related baker outcomes.
+The `Handshake Deep Dive` page provides a detailed view of individual handshake records and related baker outcomes.
 
 ### Key Visuals
 
-* Gender, age bin, season, and placement slicers
+* Season, placement, gender, and age filters
 * Handshake detail table
 * Baker-level handshake totals
-* Outcome summary totals
+* Handshake totals by theme group
+* Outcome summary cards
 
 ### Interactions
 
 * Slicers and table selections cross-filter handshake records.
-* Users can review both individual handshakes and baker-level totals.
-* The page connects handshakes to placement outcomes.
+* Users can review individual handshakes and baker-level handshake totals.
+* The page connects handshakes to placement outcomes and demographic patterns.
 
 ### Metrics Shown
 
-* Theme, season, episode, baker, and placement
+* Theme group
+* Season and episode
+* Baker
+* Placement
 * Individual handshake records
 * Baker handshake totals
 * Total handshakes
-* Winner, runner-up, and Did Not Win handshake totals
+* Winner handshake totals
+* Runner-up handshake totals
+* Did Not Win handshake totals
 
-### Drill-through / Bookmarks
+### Drillthrough / Bookmarks
 
-* Serves as a drill-through destination from the `Handshake Demographics` page.
+* Serves as a drillthrough destination from demographic, theme and handshake-focused views.
+* Uses reset and back buttons for navigation.
