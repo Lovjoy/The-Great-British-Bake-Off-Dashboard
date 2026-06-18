@@ -184,6 +184,12 @@ gbbo-powerbi-dashboard/
 │   ├── theme_explorer.png
 │   ├── demographics.png
 │   ├── handshake_deep_dive.png
+│   ├── most_views.png
+│   ├── hightest_rating.png
+│   ├── biscuits_handshakes.png
+│   ├── baker_profile_jurgen.png
+│   ├── handshake_deep_dive_season9.png
+│   ├── viewership_ratings_by_year.png
 │   ├── The_Great_British_Bake_Off_title.jpg
 │   └── handshake.webp
 │
