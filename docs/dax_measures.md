@@ -28,21 +28,34 @@ RETURN
 Classifies each baker as the season winner, runner-up, or did not win.
 
 ```DAX
-Placement = 
+Placement =
 VAR BakerName =
-    TRIM(UPPER([Baker]))
+    TRIM(UPPER(Bakers[Baker]))
+
+VAR CurrentSeason =
+    Bakers[Season]
 
 VAR WinnerName =
     TRIM(UPPER('Seasons'[Winner for Selected Baker Season]))
 
 VAR LastEp =
-    [Last Episode]
+    Bakers[Last Episode]
+
+VAR WinnerLastEp =
+    CALCULATE(
+        MAX(Bakers[Last Episode]),
+        FILTER(
+            ALL(Bakers),
+            Bakers[Season] = CurrentSeason
+                && TRIM(UPPER(Bakers[Baker])) = WinnerName
+        )
+    )
 
 RETURN
     SWITCH(
         TRUE(),
         BakerName = WinnerName, "Winner",
-        LastEp = 10, "Runner-up",
+        LastEp = WinnerLastEp, "Runner-up",
         "Did Not Win"
     )
 ```
