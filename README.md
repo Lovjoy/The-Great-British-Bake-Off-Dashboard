@@ -156,7 +156,7 @@ The model was designed to support cross-filtering, drillthrough navigation, and 
 * **Strongest-performing non-winner:** **Jürgen** from Season 12 stood out as the strongest-performing non-winner. He earned **3 Star Baker awards**, received **3 Did Well placements**, was **never marked At Risk**, but did not make it to the final.
 * **Winner with the weakest performance metrics:** **Jon** from Season 3 had the weakest winner performance based on the selected metrics, with **1 Star Baker award**, **1 Did Well placement**, and **3 At Risk placements**.
 * **Handshake distribution by gender and age:** Male bakers received **29 handshakes**, while female bakers received **22 handshakes**. Overall baker age distribution peaked in the **30 age bin**, while handshake frequency peaked in the **25 age bin**.
-* **Themes most associated with handshakes:** **Biscuits** had the most handshakes, with **7 total**. All biscuit handshakes occurred in Episode 2 of their respective seasons and non of the bakers won.
+* **Themes most associated with handshakes:** **Biscuits** had the most handshakes, with **7 total**. All biscuit handshakes occurred in Episode 2 of their respective seasons and none of the bakers won.
 * **Most common theme groups:** **Bread, Cake, Biscuits, and Final** appeared in every season.
 
 ## Known Limitations
@@ -220,7 +220,6 @@ https://github.com/Lovjoy/The-Great-British-Bake-Off-Dashboard/tree/main/docs
 ## Future Improvements
 
 * Add a short video walkthrough of dashboard navigation.
-* Create reflection in blog post with findings, design decisions, and lessons learned.
 
 ## Credits and Data Sources
 
