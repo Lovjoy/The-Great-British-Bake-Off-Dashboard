@@ -9,8 +9,8 @@ The goal of this project was to build a polished first Power BI dashboard that d
 ## Links
 
 * Reflection blog post: https://arayofdata.blogspot.com/2026/06/star-bakers-handshakes-and-dashboards.html
-* GitHub repository: https://github.com/Lovjoy/The-Great-British-Bake-Off-Dashboard/tree/main/dashboard
-* Youtube demo: Coming Soon
+* GitHub repository: https://github.com/RayofData/The-Great-British-Bake-Off-Dashboard/tree/main/dashboard
+* Youtube demo: https://youtu.be/M9G9CqhxZq0
 
 ## Dashboard Preview
 
@@ -211,15 +211,11 @@ gbbo-powerbi-dashboard/
 
 Additional technical documentation is available in the `docs/` folder:
 
-https://github.com/Lovjoy/The-Great-British-Bake-Off-Dashboard/tree/main/docs
+https://github.com/RayofData/The-Great-British-Bake-Off-Dashboard/tree/main/docs
 
 * `dax_measures.md`: Key measures and calculated columns
 * `power_query_notes.md`: Data cleaning and transformation steps
 * `dashboard_pages.md`: Summary of report pages and interactions
-
-## Future Improvements
-
-* Add a short video walkthrough of dashboard navigation.
 
 ## Credits and Data Sources
 
